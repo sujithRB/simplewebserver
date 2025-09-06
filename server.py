@@ -1,4 +1,4 @@
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import HTTPServer,BaseHTTPRequestHandler
 
 content = '''
 <!doctype html>
@@ -15,7 +15,8 @@ content = '''
         <tr><td>3</td><td>physical layer</td><td>Ethernet</td></tr>
     </table>
 </body>
-</html>'''
+</html>
+'''
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):

@@ -36,6 +36,7 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
+```
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 content = '''
@@ -67,8 +68,10 @@ print("This is my webserver")
 server_address =('127.0.0.20',8000)
 httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
-## OUTPUT:
+```
 
+## OUTPUT:
+![alt text](<Screenshot 2025-08-30 095140.png>)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
